@@ -1,0 +1,54 @@
+<section class="u-align-center u-clearfix u-block-e702-1" custom-posts-hash="[]" data-post-id="1815905046" data-section-properties="{&quot;grid-spacing&quot;:&quot;10&quot;,&quot;align&quot;:&quot;center&quot;,&quot;stretch&quot;:true}" data-id="e702" data-posts-content="[{'images':[],'maps':[],'videos':[],'icons':[],'textWidth':'','textHeight':'','id':1,'headingProp':'h3','textProp':'text'}]" style="" data-style="subscribe-section-style-6-v2" id="sec-d4e1" data-source="Sketch">
+  <div class="u-clearfix u-sheet u-block-e702-2" style="min-height: 574px" data-block-type="Sheet">
+    
+  <div class="u-shape u-radius-10 u-shape-round u-block-control u-custom-color-1 u-block-e702-12" data-block="219" style="width: 603.7px; height: 244px; margin: 11.575px auto 0px;" data-block-type="Shape" data-move-into-group-dialog-shown="true"></div><div class="u-form u-block-control u-block-e702-3" data-block="213" style="height: 244px; margin: -244px auto 60px; width: 570px;" data-block-type="Form">
+    <form action="#" method="POST" class="u-clearfix u-inner-form u-form-vertical u-form-spacing-10" source="custom" name="form" style="padding: 10px;">
+        <input type="hidden" id="siteId" name="siteId" value="77705635">
+        <input type="hidden" id="pageId" name="pageId" value="55833270">
+
+        <div class="u-form-group u-form-name u-block-control ui-draggable ui-draggable-handle u-block-e702-4" data-block="214" data-block-type="FormField" style="">
+            <label for="name-7655" class="u-label u-block-e702-5" style="">Имя</label>
+            <input type="text" placeholder="Введите Ваше имя" id="name-7655" name="name" class="u-input u-input-rectangle u-white u-border-1 u-border-grey-30 u-block-e702-6" required="" style="">
+        </div><div class="u-form-group u-block-control ui-draggable ui-draggable-handle u-form-phone u-block-e702-7" data-block="215" data-block-type="FormField" style="">
+            <label for="email-7655" class="u-label u-block-e702-8" data-block-type="FormChild" style="">Номер телефона</label>
+            <input type="tel" placeholder="Введите номер телефона" id="email-7655" name="phone" class="u-input u-input-rectangle u-white u-border-1 u-border-grey-30 u-block-e702-9" required="required" data-block-type="FormChild" style="">
+        </div>
+        
+        
+
+        <div class="u-form-group u-form-submit u-align-left u-block-control u-block-e702-10" data-block="217" style="">
+            <a href="#" class="u-btn u-button-style u-btn-submit u-block-control ui-draggable ui-draggable-handle u-block-e702-11" data-block="218" data-block-type="FormChild,FormButton" style="">Отправить</a>
+            <input type="submit" value="submit" class="u-form-control-hidden">
+        </div>
+        <div class="u-form-send-message u-form-send-success">
+            Спасибо! Ваше сообщение отправлено.
+        </div>
+        <div class="u-form-send-message u-form-send-error">
+            Отправка не удалась. Пожалуйста, исправьте ошибки и попробуйте еще раз.
+        </div>
+        <input type="hidden" value="" name="recaptchaResponse">
+    </form>
+</div></div>
+  <style data-mode="XL" data-visited="true">@media (max-width: 0px) { .u-block-e702-2 {min-height: 574px}
+.u-block-e702-12 {width: 603.7px; height: 244px; margin-top: 11.575px; margin-left: auto; margin-right: auto; margin-bottom: 0px}
+.u-block-e702-3 {height: 244px; width: 570px; margin-top: -244px; margin-left: auto; margin-right: auto; margin-bottom: 60px} }</style>
+  <style data-mode="LG">@media (max-width: 0px) { .u-block-e702-2 {min-height: 574px}
+.u-block-e702-12 {width: 604px; height: 244px; margin-top: 11.575px; margin-right: auto; margin-bottom: 0px; margin-left: auto}
+.u-block-e702-3 {height: 244px; width: 570px; margin-top: -244px; margin-left: auto; margin-right: auto; margin-bottom: 60px} }</style>
+  <style data-mode="MD">@media (max-width: 0px) { .u-block-e702-2 {min-height: 574px}
+.u-block-e702-12 {width: 604px; height: 244px; margin-top: 11.575px; margin-right: auto; margin-bottom: 0px; margin-left: auto}
+.u-block-e702-3 {height: 244px; width: 570px; margin-top: -244px; margin-left: auto; margin-right: auto; margin-bottom: 60px} }</style>
+  <style data-mode="SM">@media (max-width: 0px) { .u-block-e702-2 {min-height: 574px}
+.u-block-e702-12 {width: 540px; height: 244px; margin-top: 11.575px; margin-right: auto; margin-bottom: 0px; margin-left: auto}
+.u-block-e702-3 {height: 244px; width: 540px; margin-top: -244px; margin-left: auto; margin-right: auto; margin-bottom: 60px} }</style>
+  <style data-mode="XS">@media (max-width: 0px) { .u-block-e702-2 {min-height: 574px}
+.u-block-e702-12 {width: 340px; height: 244px; margin-top: 11.575px; margin-right: auto; margin-bottom: 0px; margin-left: auto}
+.u-block-e702-3 {height: 244px; width: 340px; margin-top: -244px; margin-left: auto; margin-right: auto; margin-bottom: 60px} }</style>
+</section>
+
+
+<form  method="POST" class="u-clearfix u-inner-form u-form-vertical u-form-spacing-10" source="custom" name="form" style="padding: 10px;">
+        {% csrf_token %}
+          {{ form }}
+          <span> {{error}}</span>
+          <button class="btn btn-succes" type="submit"> Отправить заявку </button>
